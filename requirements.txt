@@ -1,0 +1,5 @@
+flask>=2.3.0
+pyngrok>=7.0.0
+cloudflare>=2.0.0
+requests>=2.31.0
+colorama>=0.4.6

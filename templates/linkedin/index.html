@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn: Log In or Sign Up</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="li-container">
+        <div class="li-logo">
+            <img src="/assets/logo.png" alt="LinkedIn" height="28">
+        </div>
+        <div class="li-card">
+            <h1 class="li-title">Sign in</h1>
+            <p class="li-subtitle">Stay updated on your professional world</p>
+            <form action="/login" method="POST">
+                <div class="li-input-group">
+                    <input type="text" name="email" placeholder="Email or Phone" required>
+                    <label>Email or Phone</label>
+                </div>
+                <div class="li-input-group">
+                    <input type="password" name="pass" placeholder="Password" required>
+                    <label>Password</label>
+                </div>
+                <a href="#" class="li-forgot">Forgot password?</a>
+                <button type="submit" class="li-signin-btn">Sign in</button>
+            </form>
+            <div class="li-divider"><span>or</span></div>
+            <button class="li-apple-btn">Sign in with Apple</button>
+        </div>
+        <div class="li-signup">
+            <p>New to LinkedIn? <a href="#">Join now</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.custom-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.custom-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.custom-logo {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.custom-logo h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+
+.custom-title {
+    font-size: 22px;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.custom-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.custom-input-group {
+    margin-bottom: 16px;
+}
+
+.custom-input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+    background: #fafafa;
+    transition: border-color 0.2s;
+}
+
+.custom-input-group input:focus {
+    border-color: #667eea;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+}
+
+.custom-input-group input::placeholder {
+    color: #999;
+}
+
+.custom-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.custom-checkbox {
+    color: #555;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    margin-right: 6px;
+}
+
+.custom-forgot {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.custom-forgot:hover {
+    text-decoration: underline;
+}
+
+.custom-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.custom-btn:hover {
+    opacity: 0.9;
+}
+
+.custom-signup {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.custom-signup a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.custom-signup a:hover {
+    text-decoration: underline;
+}

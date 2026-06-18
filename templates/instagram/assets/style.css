@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.ig-container {
+    max-width: 350px;
+    width: 100%;
+}
+
+.ig-card {
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 40px 40px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ig-logo {
+    margin-bottom: 24px;
+}
+
+.ig-input-group {
+    margin-bottom: 8px;
+}
+
+.ig-input-group input {
+    width: 100%;
+    padding: 9px 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+    background: #fafafa;
+    color: #262626;
+}
+
+.ig-input-group input:focus {
+    border-color: #a8a8a8;
+    outline: none;
+}
+
+.ig-input-group input::placeholder {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.ig-login-btn {
+    width: 100%;
+    padding: 7px 16px;
+    background: #0095f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+.ig-login-btn:hover {
+    opacity: 1;
+}
+
+.ig-divider {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.ig-divider::before,
+.ig-divider::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid #dbdbdb;
+}
+
+.ig-divider span {
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 18px;
+}
+
+.ig-fb-link {
+    display: block;
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.ig-fb-icon {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.ig-forgot {
+    display: block;
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.ig-signup-card {
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 20px 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ig-signup-card p {
+    font-size: 14px;
+    color: #262626;
+}
+
+.ig-signup-card a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ig-apps {
+    text-align: center;
+}
+
+.ig-apps p {
+    font-size: 14px;
+    color: #262626;
+    margin-bottom: 16px;
+}
+
+.ig-app-badges {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ig-badge {
+    background: #000000;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 11px;
+}

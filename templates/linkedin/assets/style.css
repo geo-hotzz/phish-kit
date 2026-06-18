@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.li-container {
+    max-width: 416px;
+    width: 100%;
+    padding: 20px;
+}
+
+.li-logo {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.li-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.li-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.9);
+    margin-bottom: 4px;
+}
+
+.li-subtitle {
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 24px;
+}
+
+.li-input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.li-input-group input {
+    width: 100%;
+    padding: 13px 12px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.9);
+    background: transparent;
+}
+
+.li-input-group input:focus {
+    border-color: #0a66c2;
+    outline: none;
+    box-shadow: 0 0 0 1px #0a66c2;
+}
+
+.li-input-group label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    color: rgba(0,0,0,0.6);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.1s;
+}
+
+.li-input-group input:focus + label,
+.li-input-group input:not(:placeholder-shown) + label {
+    top: -6px;
+    left: 8px;
+    font-size: 11px;
+    color: #0a66c2;
+    background: #ffffff;
+    padding: 0 4px;
+}
+
+.li-forgot {
+    display: block;
+    color: #0a66c2;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.li-forgot:hover {
+    text-decoration: underline;
+}
+
+.li-signin-btn {
+    width: 100%;
+    padding: 12px 24px;
+    background: #0a66c2;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.li-signin-btn:hover {
+    background: #004182;
+}
+
+.li-divider {
+    text-align: center;
+    margin: 16px 0;
+    position: relative;
+}
+
+.li-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.li-divider span {
+    background: #ffffff;
+    padding: 0 8px;
+    color: rgba(0,0,0,0.6);
+    font-size: 12px;
+    position: relative;
+}
+
+.li-apple-btn {
+    width: 100%;
+    padding: 12px 24px;
+    background: #ffffff;
+    color: rgba(0,0,0,0.6);
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.li-apple-btn:hover {
+    background: #f3f2ef;
+}
+
+.li-signup {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+}
+
+.li-signup a {
+    color: #0a66c2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.li-signup a:hover {
+    text-decoration: underline;
+}

