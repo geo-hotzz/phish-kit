@@ -76,7 +76,7 @@ fi
 
 echo "[*] Installing dependencies..."
 source "$SCRIPT_DIR/venv/bin/activate"
-pip install -q flask requests 2>/dev/null
+pip install -q -r "$SCRIPT_DIR/requirements.txt" 2>/dev/null
 
 # ---------------------------------------------------------------------------
 # Write config.json
@@ -110,10 +110,10 @@ cat > "$SCRIPT_DIR/config.json" << EOF
 EOF
 
 # ---------------------------------------------------------------------------
-# Start local server
+# Start local server (using venv Python)
 # ---------------------------------------------------------------------------
 echo "[*] Starting PhishLab server on port $PORT..."
-python3 "$SCRIPT_DIR/phishkit.py" --template "$TEMPLATE" --port "$PORT" &
+"$SCRIPT_DIR/venv/bin/python" "$SCRIPT_DIR/phishkit.py" --template "$TEMPLATE" --port "$PORT" &
 PHISH_PID=$!
 sleep 3
 
