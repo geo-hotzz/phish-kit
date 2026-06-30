@@ -13,7 +13,7 @@ from colorama import init, Fore, Style
 
 init(autoreset=True)
 
-BANNER = f"""
+BANNER =rf"""
 {Fore.RED}
   ____  _     _     _  _____ _ _ 
  |  _ \| |__ (_)___| |/ /_ _| | |
@@ -103,6 +103,10 @@ def main():
     # Update config
     config["campaign"]["template"] = template
     config["server"]["port"] = port
+
+    # Write back so server.py reads the right template
+    with open(args.config, "w") as f:
+        json.dump(config, f, indent=2)
 
     # Setup output
     os.makedirs(OUTPUT_DIR, exist_ok=True)

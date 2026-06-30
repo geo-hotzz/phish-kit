@@ -13,7 +13,30 @@ body {
     min-height: 100vh;
 }
 
-.ig-container {
+/* Two-column layout like real Instagram */
+.ig-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    max-width: 935px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Phone mockup column */
+.ig-phone {
+    flex-shrink: 0;
+    display: block;
+}
+
+.ig-phone img {
+    max-width: 380px;
+    height: auto;
+}
+
+/* Right column (login card area) */
+.ig-main {
     max-width: 350px;
     width: 100%;
 }
@@ -29,20 +52,24 @@ body {
 
 .ig-logo {
     margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .ig-input-group {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+    position: relative;
 }
 
 .ig-input-group input {
     width: 100%;
-    padding: 9px 8px;
+    padding: 12px 8px 8px;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     font-size: 12px;
     background: #fafafa;
     color: #262626;
+    transition: border-color 0.15s;
 }
 
 .ig-input-group input:focus {
@@ -52,7 +79,8 @@ body {
 
 .ig-input-group input::placeholder {
     color: #8e8e8e;
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 0.3px;
 }
 
 .ig-login-btn {
@@ -65,11 +93,16 @@ body {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 10px;
     opacity: 0.7;
+    transition: opacity 0.15s;
 }
 
 .ig-login-btn:hover {
+    opacity: 0.9;
+}
+
+.ig-login-btn:active {
     opacity: 1;
 }
 
@@ -91,10 +124,12 @@ body {
     font-size: 13px;
     font-weight: 600;
     margin: 0 18px;
+    line-height: 1;
 }
 
 .ig-fb-link {
-    display: block;
+    display: inline-flex;
+    align-items: center;
     color: #385185;
     font-size: 14px;
     font-weight: 600;
@@ -102,9 +137,8 @@ body {
     margin-bottom: 12px;
 }
 
-.ig-fb-icon {
-    font-weight: bold;
-    margin-right: 6px;
+.ig-fb-link:hover {
+    text-decoration: underline;
 }
 
 .ig-forgot {
@@ -112,13 +146,18 @@ body {
     color: #00376b;
     font-size: 12px;
     text-decoration: none;
+    margin-top: 12px;
+}
+
+.ig-forgot:hover {
+    text-decoration: underline;
 }
 
 .ig-signup-card {
     background: #ffffff;
     border: 1px solid #dbdbdb;
     border-radius: 1px;
-    padding: 20px 40px;
+    padding: 24px 40px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -132,6 +171,10 @@ body {
     color: #0095f6;
     font-weight: 600;
     text-decoration: none;
+}
+
+.ig-signup-card a:hover {
+    text-decoration: underline;
 }
 
 .ig-apps {
@@ -150,10 +193,32 @@ body {
     gap: 8px;
 }
 
-.ig-badge {
-    background: #000000;
-    color: #ffffff;
-    padding: 6px 16px;
-    border-radius: 4px;
-    font-size: 11px;
+.ig-app-badges a {
+    display: inline-block;
+}
+
+/* Hide phone on mobile */
+@media (max-width: 875px) {
+    .ig-phone {
+        display: none;
+    }
+    .ig-wrapper {
+        justify-content: center;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .ig-card {
+        border: none;
+        background: transparent;
+        padding: 20px 20px 10px;
+    }
+    .ig-signup-card {
+        border: none;
+        background: transparent;
+    }
+    body {
+        background: #ffffff;
+    }
 }

