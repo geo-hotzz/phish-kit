@@ -9,7 +9,7 @@
   "tunnel": {
     "enabled": false,
     "provider": "ngrok",
-    "ngrok_auth_token": "",
+    "ngrok_auth_token": "3L8ZAIMawuo2DND2DaKS9NnJOP0_71gXveNW6TtR97xNc72dL",
     "cloudflare_api_token": ""
   },
   "campaign": {
